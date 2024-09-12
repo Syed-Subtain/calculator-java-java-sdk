@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.sdks</groupId>
   <artifactId>calculator-java-sdk</artifactId>
-  <version>9.6.5</version>
+  <version>9.63.6</version>
   <packaging>jar</packaging>
   <name>calculator java SDK</name>
   <description>this is for testing purpose please ignore</description>
