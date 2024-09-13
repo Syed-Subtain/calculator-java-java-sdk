@@ -8,10 +8,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.sdks</groupId>
   <artifactId>calculator-java-sdk</artifactId>
-  <version>9.63.6</version>
+  <version>8.9.9</version>
   <packaging>jar</packaging>
   <name>calculator java SDK</name>
-  <description>this is for testing purpose please ignore</description>
+  <description>this istesting</description>
   <url>https://sdks.io</url>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -20,7 +20,7 @@
   </properties>
   <developers>
     <developer>
-      <name>Syed subtain</name>
+      <name>Syed Subtain</name>
       <email>syed.subtain@sdks.io</email>
       <organization>sdks.io</organization>
       <organizationUrl>https://sdks.io</organizationUrl>
@@ -56,6 +56,12 @@
       <groupId>io.apimatic</groupId>
       <artifactId>okhttp-client-adapter</artifactId>
       <version>[0.3.1, 0.4)</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
