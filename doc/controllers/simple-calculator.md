@@ -14,7 +14,7 @@ SimpleCalculatorController simpleCalculatorController = client.getSimpleCalculat
 Calculates the expression using the specified operation.
 
 ```java
-CompletableFuture<Double> getCalculateAsync(
+CompletableFuture<OperationTypeEnum> getCalculateAsync(
     final GetCalculateInput input)
 ```
 
@@ -28,7 +28,7 @@ CompletableFuture<Double> getCalculateAsync(
 
 ## Response Type
 
-`double`
+[`OperationTypeEnum`](../../doc/models/operation-type-enum.md)
 
 ## Example Usage
 

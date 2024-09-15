@@ -13,6 +13,7 @@ import io.apimatic.examples.Server;
 import io.apimatic.examples.exceptions.ApiException;
 import io.apimatic.examples.http.request.HttpMethod;
 import io.apimatic.examples.models.GetCalculateInput;
+import io.apimatic.examples.models.OperationTypeEnum;
 import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionException;
@@ -33,11 +34,11 @@ public final class SimpleCalculatorController extends BaseController {
     /**
      * Calculates the expression using the specified operation.
      * @param  input  GetCalculateInput object containing request parameters
-     * @return    Returns the Double response from the API call
+     * @return    Returns the OperationTypeEnum response from the API call
      * @throws    ApiException    Represents error response from the server.
      * @throws    IOException    Signals that an I/O exception of some sort has occurred.
      */
-    public Double getCalculate(
+    public OperationTypeEnum getCalculate(
             final GetCalculateInput input) throws ApiException, IOException {
         return prepareGetCalculateRequest(input).execute();
     }
@@ -45,9 +46,9 @@ public final class SimpleCalculatorController extends BaseController {
     /**
      * Calculates the expression using the specified operation.
      * @param  input  GetCalculateInput object containing request parameters
-     * @return    Returns the Double response from the API call
+     * @return    Returns the OperationTypeEnum response from the API call
      */
-    public CompletableFuture<Double> getCalculateAsync(
+    public CompletableFuture<OperationTypeEnum> getCalculateAsync(
             final GetCalculateInput input) {
         try { 
             return prepareGetCalculateRequest(input).executeAsync(); 
@@ -59,9 +60,9 @@ public final class SimpleCalculatorController extends BaseController {
     /**
      * Builds the ApiCall object for getCalculate.
      */
-    private ApiCall<Double, ApiException> prepareGetCalculateRequest(
+    private ApiCall<OperationTypeEnum, ApiException> prepareGetCalculateRequest(
             final GetCalculateInput input) throws IOException {
-        return new ApiCall.Builder<Double, ApiException>()
+        return new ApiCall.Builder<OperationTypeEnum, ApiException>()
                 .globalConfig(getGlobalConfiguration())
                 .requestBuilder(requestBuilder -> requestBuilder
                         .server(Server.CALCULATOR.value())
@@ -75,7 +76,7 @@ public final class SimpleCalculatorController extends BaseController {
                         .httpMethod(HttpMethod.GET))
                 .responseHandler(responseHandler -> responseHandler
                         .deserializer(
-                                response -> Double.parseDouble(response))
+                                response -> OperationTypeEnum.fromString(response))
                         .nullify404(false)
                         .globalErrorCase(GLOBAL_ERROR_CASES))
                 .build();
