@@ -1,5 +1,5 @@
 
-# HttpBodyRequest Class
+# HttpBodyRequest
 
 HTTP Request with an explicit body.
 
@@ -7,7 +7,7 @@ HTTP Request with an explicit body.
 
 | Name | Description |
 |  --- | --- |
-| `HttpBodyRequest(HttpMethod method, StringBuilder queryUrlBuilder,` [`Headers`](headers.md) `headers, Map<String, Object> queryParams, Object body)` | Create a request with explicit body. |
+| `HttpBodyRequest(HttpMethod method, StringBuilder queryUrlBuilder,` [`Headers`](../doc/headers.md) `headers, Map<String, Object> queryParams, Object body)` | Create a request with explicit body. |
 
 ## Methods
 
