@@ -3,12 +3,6 @@
 
 Class to hold response body as string.
 
-## Constructors
-
-| Name | Description |
-|  --- | --- |
-| `HttpStringResponse(int code, Headers headers, InputStream rawBody, String body)` | Constructor for HttpStringResponse. |
-
 ## Methods
 
 | Name | Description | Return Type |

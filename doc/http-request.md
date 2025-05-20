@@ -3,12 +3,6 @@
 
 Class for creating and managing HTTP Requests.
 
-## Constructors
-
-| Name | Description |
-|  --- | --- |
-| `HttpRequest(HttpMethod method, StringBuilder queryUrlBuilder, Headers headers, Map<String, Object> queryParameters, List< SimpleEntry < String, Object >> parameters)` | Initializes a simple http request. |
-
 ## Methods
 
 | Name | Description | Return Type |

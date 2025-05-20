@@ -8,7 +8,7 @@ This is the base class for all exceptions that represent an error response from 
 | Name | Description |
 |  --- | --- |
 | `ApiException(String reason)` | Initialization constructor. |
-| `ApiException(String reason,` [`HttpContext`](../doc/http-context.md) `context)` | Initialization constructor. |
+| <code>ApiException(String reason, [`HttpContext`](../doc/http-context.md) context)</code> | Initialization constructor. |
 
 ## Methods
 

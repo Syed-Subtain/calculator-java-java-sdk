@@ -3,12 +3,6 @@
 
 Class to hold HTTP Response.
 
-## Constructors
-
-| Name | Description |
-|  --- | --- |
-| `HttpResponse(int code, Headers headers, InputStream rawBody)` | Constructor for HttpResponse. |
-
 ## Methods
 
 | Name | Description | Return Type |

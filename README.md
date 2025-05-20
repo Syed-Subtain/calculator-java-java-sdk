@@ -13,23 +13,23 @@ Install the SDK by adding the following dependency in your project's pom.xml fil
 <dependency>
   <groupId>io.sdks</groupId>
   <artifactId>calculator-java-sdk</artifactId>
-  <version>6.7.689</version>
+  <version>1.2.6</version>
 </dependency>
 ```
 
 You can also view the package at:
-https://central.sonatype.com/artifact/io.sdks/calculator-java-sdk/6.7.689
+https://central.sonatype.com/artifact/io.sdks/calculator-java-sdk/1.2.6
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
-| `environment` | `Environment` | The API environment. <br> **Default: `Environment.PRODUCTION`** |
-| `httpClientConfig` | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
+| environment | `Environment` | The API environment. <br> **Default: `Environment.PRODUCTION`** |
+| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
 
 The API client can be initialized as follows:
 
@@ -43,26 +43,29 @@ ApimaticCalculatorClient client = new ApimaticCalculatorClient.Builder()
 
 ## List of APIs
 
-* [Simple Calculator](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/controllers/simple-calculator.md)
+* [Simple Calculator](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/controllers/simple-calculator.md)
 
-## Additional Documentation
+## SDK Infrastructure
 
-### Wrappers
+### Configuration
 
-* [HttpRequest](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-request.md)
-* [HttpResponse](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-string-response.md)
-* [HttpContext](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-context.md)
-* [HttpBodyRequest](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-body-request.md)
-* [HttpCallback Interface](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-callback-interface.md)
-* [Headers](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/headers.md)
-* [ApiException](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/api-exception.md)
-* [Configuration Interface](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/configuration-interface.md)
-* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-client-configuration.md)
-* [HttpClientConfiguration.Builder](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/http-client-configuration-builder.md)
+* [Configuration Interface](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/configuration-interface.md)
+* [HttpClientConfiguration](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-client-configuration.md)
+* [HttpClientConfiguration.Builder](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-client-configuration-builder.md)
+
+### HTTP
+
+* [Headers](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/headers.md)
+* [HttpCallback Interface](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-callback-interface.md)
+* [HttpContext](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-context.md)
+* [HttpBodyRequest](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-body-request.md)
+* [HttpRequest](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-request.md)
+* [HttpResponse](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/http-string-response.md)
 
 ### Utilities
 
-* [ApiHelper](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/api-helper.md)
-* [FileWrapper](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/6.7.689/doc/file-wrapper.md)
+* [ApiException](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/api-exception.md)
+* [ApiHelper](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/api-helper.md)
+* [FileWrapper](https://www.github.com/Syed-Subtain/calculator-java-java-sdk/tree/1.2.6/doc/file-wrapper.md)
 
